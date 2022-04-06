@@ -35,7 +35,7 @@ const Projects = () => {
         <div className="preview-box">
           <h2 className="project-title">Audiophile</h2>
           <img src={Audiophile} alt="audiophile" className="preview-img" />
-          <h3 className="subheading">React.js E-commerce website powered by Node/Express and MongoDB</h3>
+          <h3 className="subheading">React.js E-commerce website powered by Node/Express, MongoDB, and Heroku</h3>
           <div className="buttons">
             <button className="live-site" onClick={() => {handleClick(audioSiteURL)}}>Live Site</button>
             <button className="github" onClick={() => {handleClick(audioGithub)}}>Github</button>

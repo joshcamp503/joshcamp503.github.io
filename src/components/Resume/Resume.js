@@ -15,7 +15,7 @@ const Resume = () => {
       <div className="resume">
         <h1 className="title">RESUME</h1>
         <button className="download" onClick={() => {saveAs(ResumePDF, 'josh-campanella-resume-2022.pdf')}}>DOWNLOAD</button>
-        <object data={ResumePDF} type="application/pdf" width="1200px" height="1200px">Resume not found</object>
+        <object data={ResumePDF} type="application/pdf" >Resume not found</object>
         <button className="download" id="button2" onClick={() => {saveAs(ResumePDF, 'josh-campanella-resume-2022.pdf')}}>DOWNLOAD</button>
       </div>
     </Element>

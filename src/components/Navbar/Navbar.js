@@ -37,7 +37,7 @@ const Navbar = ({ refList, navScroll }) => {
         <ModeSelector />
       </nav>
       {showNav && <div className="navmenu-container">
-        <div className="x-btn" onClick={closeNav} ><span>x</span></div>
+        <div className="x-btn"><span onClick={closeNav} >x</span></div>
         <Navmenu closeNav={closeNav} />
       </div>}
     </div>
