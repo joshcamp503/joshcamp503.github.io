@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0c592605.css",
+    "main.js": "/static/js/main.810b75fb.js",
+    "static/media/josh-campanella-resume-2022.pdf": "/static/media/josh-campanella-resume-2022.d2fe386b7794484f28b6.pdf",
+    "static/media/ip-locator-preview.png": "/static/media/ip-locator-preview.7fdd56746efe3dac8079.png",
+    "static/media/audiophile-preview.png": "/static/media/audiophile-preview.40a56342eb3fce1a4565.png",
+    "static/media/where-in-the-world-preview.png": "/static/media/where-in-the-world-preview.a0dcb3dff6cef8b5fba6.png",
+    "static/media/portfolio-preview.png": "/static/media/portfolio-preview.209b54a3e865def491f1.png",
+    "index.html": "/index.html",
+    "static/media/icon-hamburger.svg": "/static/media/icon-hamburger.f8a9f0cf12d419a7d18556f98d81a47e.svg",
+    "main.0c592605.css.map": "/static/css/main.0c592605.css.map",
+    "main.810b75fb.js.map": "/static/js/main.810b75fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c592605.css",
+    "static/js/main.810b75fb.js"
+  ]
+}
