@@ -17,6 +17,7 @@ const Home = () => {
   const { mode } = useMode()
 
   return (
+    // ${mode} is for light mode/dark mode
     <div className={`home ${mode}`}>
       <div className="react-icon"><FaReact /></div>
       <div className="javascript-icon"><SiJavascript /></div>
