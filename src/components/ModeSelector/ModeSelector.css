@@ -1,0 +1,27 @@
+/* LIGHT MODE STYLES */
+.mode-selector.light button {
+  filter: invert(25%);
+}
+
+/* DEFAULT STYLES */
+
+.mode-selector button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  filter: invert(70%);
+  position: relative;
+    z-index: 2;
+}
+
+.mode-selector button:hover {
+  filter: invert(80%);
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .mode-selector {
+    margin-right: 1rem;
+    padding: 2rem 1rem;
+  }
+}

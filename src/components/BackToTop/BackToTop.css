@@ -1,0 +1,29 @@
+.back-to-top {
+  position: fixed;
+    top: 120px;
+    left: 40px;
+    z-index: 1;
+}
+
+.back-to-top .back-btn {
+  background-color: #C0C0C0;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+  height: 24px;
+  width: 90px;
+}
+
+.back-to-top .back-btn:hover {
+  filter: invert(80%);
+}
+
+@media screen and (min-width: 1200px) {
+  .back-to-top {
+    top: 150px;
+    left: 120px;
+  }
+}

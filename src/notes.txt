@@ -1,0 +1,30 @@
+animation ideas:
+
+background animation: "skill icons" dancing around
+
+COLORS:
+Dark Mode:
+
+  Dark gray: #1C1C1C
+  Light gray: #CCCCCC
+  Purple: #AE81FF (bools)
+  Pink: #F92672 (return, import, etc)
+  Orange: #FD9720 (className, properties)
+  Pale Yellow: #E6DB74 (strings)
+  Teal: #32E78D (components)
+  Green: #B0EC38 (function names)
+  Blue: #49E0FD (variable declarations, like const)
+
+Light Mode:
+  
+  White
+  Medium gray: #A0A1A7
+  Light gray: #F0F0F0
+  Very Light gray: #FAFAFA
+  Very Dark Gray: #383A42   ****text
+  Purple: #A626A4 (function names) >> monokai green
+  Blue: #4078F2 (objects, props) >> monokai white
+  Teal: #0084BC (operators) >> monokai 
+  Red: #E4564A (variable declarations, like const) >> monokai blue
+  Green: #50A14F (components) >> monokai teal
+  Brown: #986801 (variables) >> monokai white

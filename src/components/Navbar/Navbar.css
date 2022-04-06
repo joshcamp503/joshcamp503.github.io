@@ -1,0 +1,91 @@
+/* LIGHT MODE STYLES */
+.navbar.light {
+  background-color: #F0F0F0;
+  color: #383A42;
+}
+
+.navbar.light .hamburger {
+  filter: invert(75%);
+}
+
+/* DEFAULT STYLES */
+
+.nav-container {
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #1c1c1c;
+  color: #cccccc;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+  font-family: Consolas, monaco, monospace;
+  padding: 2rem;
+}
+
+.navbar .hamburger {
+  cursor: pointer;
+  height: 16px;
+  position: relative;
+    z-index: 2;
+  width: 16px;
+}
+
+.navbar > .navmenu {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .navbar {
+    display: flex;
+    padding: 0;
+  }
+
+  .navbar .hamburger {
+    display: none;
+  }
+  
+  .navbar > .navmenu {
+    display: flex;
+      align-items: center;
+    list-style: none;
+    margin-left: auto;
+  }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+  .navmenu-container {
+    background-color: #F0F0F0;
+    font-family: Consolas, monaco, monospace;
+    position: fixed;
+      top: 0;
+      z-index: 2;
+    width: 100%;
+  }
+  
+  .x-btn {
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+      align-items: center;
+    font-size: 26px;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .x-btn span{
+    cursor: pointer;
+  }
+
+  /* LIGHT MODE */
+  .light .navmenu-container {
+    background-color: #E0E0E0;
+  }
+
+}
