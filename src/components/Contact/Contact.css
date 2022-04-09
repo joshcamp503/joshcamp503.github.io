@@ -1,0 +1,123 @@
+.contact {
+  background-color: #F0F0F0;
+  color: #383A42;
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-between;
+  height: fit-content;
+  padding: 5rem 3rem;
+  position: relative;
+}
+
+.contact h1 {
+  font-size: 40px;
+  letter-spacing: 12px;
+}
+
+.contact-form {
+  display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.contact-form button {
+  background-color: #C0C0C0;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+  padding: 6px 12px;
+}
+
+.contact h2 {
+  align-self: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 7px 10px;
+  width: 300px;
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: transparent;
+}
+
+.contact-form input {
+  height: 26px;
+}
+
+.contact-form textarea {
+  height: 200px;
+  resize: none;
+}
+
+.contact .info {
+  align-self: flex-start;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.contact .info p {
+  font-size: 14px;
+  margin: 8px;
+}
+
+.contact .conf-modal {
+  background-color: rgba(0,0,0,0.75);
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 100%;
+  position: absolute;
+    bottom: 0;
+    z-index: 1;
+  width: 100%;
+}
+
+.conf-modal .message {
+  background-color: #F0F0F0;
+  border-radius: 8px;
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  padding: 1.5rem 2rem;
+  position: relative;
+    top: -150px;
+  width: 350px;
+}
+
+.conf-modal h3 {
+  margin-bottom: 1rem;
+}
+
+.conf-modal p {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+}
+
+.conf-modal button {
+  background-color: #C0C0C0;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+  padding: 4px 12px;
+  margin-top: 1rem;
+}
+
+.conf-modal .error {
+  align-self: flex-start;
+}

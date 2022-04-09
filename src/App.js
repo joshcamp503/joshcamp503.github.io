@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume';
 import BackToTop from './components/BackToTop/BackToTop';
+import Contact from './components/Contact/Contact';
 
 // HOOKS
 import { useMode } from "./hooks/useMode"
@@ -21,6 +22,7 @@ function App() {
         <Home />
         <Projects />
         <Resume />
+        <Contact />
       </IconContext.Provider>
     </div>
   );
