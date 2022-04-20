@@ -23,7 +23,7 @@ const About = () => {
         </p>
 
         <p className="about-text-5">
-        Lastly, I’ve spent 4 years of my life working as an independent construction contractor.  I am productive, competent, accountable, and excellent at communicating and working with a team on complex projects with a lot of moving parts. If you’re looking to add someone to your team with a ton of technical talent and all the soft skills to go with it, give me a callback (pun intended), shoot me an email, or submit the contact form below.
+        I’ve spent 4 years of my life working as an independent construction contractor.  I am productive, competent, accountable, and excellent at communicating and working with a team on complex projects with a lot of moving parts. I know how to put my head down and work, and if you’re looking to add someone to your team with a ton of technical talent and all the soft skills to go with it, give me a callback (pun intended), shoot me an email, or submit the contact form below.
         </p>
 
         <p className="about-text-6">
