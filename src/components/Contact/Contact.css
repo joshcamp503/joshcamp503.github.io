@@ -1,6 +1,11 @@
-.contact {
+.light .contact{
   background-color: #F0F0F0;
   color: #383A42;
+}
+
+.contact {
+  background-color: #1C1C1C;
+  color: #CCCCCC;
   display: flex;
     align-items: center;
     flex-direction: column;

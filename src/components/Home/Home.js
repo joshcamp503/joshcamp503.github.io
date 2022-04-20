@@ -35,6 +35,7 @@ const Home = () => {
         <ul className="button-box">
           <li><Link to="projects" spy={true} smooth={true} duration={500} offset={-70}>SEE MY WORK</Link></li>
           <li><Link to="resume" spy={true} smooth={true} duration={500} offset={-70}>SEE MY RESUME</Link></li>
+          <li><Link to="contact" spy={true} smooth={true} duration={500} offset={-70}>MESSAGE ME</Link></li>
         </ul>
       </div>
     </div>

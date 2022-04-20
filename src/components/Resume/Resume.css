@@ -1,4 +1,11 @@
+.light .resume {
+  background-color: #1C1C1C;
+  color: #CCCCCC;
+}
+
 .resume {
+  background-color: #F0F0F0;
+  color: #383A42;
   display: flex;
     align-items: center;
     flex-direction: column;

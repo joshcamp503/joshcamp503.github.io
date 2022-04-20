@@ -1,0 +1,44 @@
+.light .about{
+  background-color: #F0F0F0;
+  color: #383A42;
+}
+
+.about {
+  background-color: #1C1C1C;
+  color: #CCCCCC;
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+  height: fit-content;
+  padding: 5rem 3rem;
+  position: relative;
+}
+
+.about h1 {
+  font-size: 40px;
+  letter-spacing: 12px;
+}
+
+.about-text-container {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  max-width: 900px;
+}
+
+.about p {
+  font-weight: 900;
+  text-align: left;
+  text-indent: 2rem;
+  width: 100%;
+}
+
+.about p:last-child {
+  font-size: 1.2rem;
+  text-align: center;
+  text-indent: 0;
+}
