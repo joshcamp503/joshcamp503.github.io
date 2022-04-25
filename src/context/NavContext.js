@@ -6,7 +6,6 @@ export const NavContext = createContext()
 const navReducer = (state, action) => {
   switch (action.type) {
     case 'CHANGE_CURRENT_SECTION':
-      console.log(action.payload)
       return { ...state, currentSection: action.payload }
     default: 
       return state
