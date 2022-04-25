@@ -5,12 +5,15 @@ import App from './App';
 
 // CONTEXT PROVIDERS
 import { ModeProvider } from './context/ModeContext'
+import { NavProvider } from './context/NavContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ModeProvider>
-      <App />
-    </ModeProvider>
+    <NavProvider>
+      <ModeProvider>
+        <App />
+      </ModeProvider>
+    </NavProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

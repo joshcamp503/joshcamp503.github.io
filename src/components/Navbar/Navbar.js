@@ -13,7 +13,7 @@ import { useMode } from "../../hooks/useMode"
 import { useMediaSize } from '../../hooks/useMediaSize';
 import { useState } from 'react'
 
-const Navbar = ({ refList, navScroll }) => {
+const Navbar = () => {
   const { mode } = useMode()
   const [showNav, setShowNav] = useState(false)
 
@@ -22,8 +22,7 @@ const Navbar = ({ refList, navScroll }) => {
   }
 
   const closeNav = () => {
-    console.log('closeNav fired')
-    showNav ? setShowNav(false) : setShowNav(true)
+    setShowNav(false)
   }
 
   // useMediaSize acts like a media query, closes hamburger nav @ 1200px
@@ -33,7 +32,7 @@ const Navbar = ({ refList, navScroll }) => {
     <div className="nav-container">
       <nav className={`navbar ${mode}`}>
         <img className="hamburger" src={hamburger} alt="hamburger" onClick={handleBurger}/>
-        {!showNav && <Navmenu />}
+        {!showNav && <Navmenu closeNav={closeNav} />}
         <ModeSelector />
       </nav>
       {showNav && <div className="navmenu-container">

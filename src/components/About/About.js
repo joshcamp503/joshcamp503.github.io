@@ -1,9 +1,10 @@
 // STYLES
 import './About.css'
 
+
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" >
       <h1 className="about-header">ABOUT ME</h1>
       <div className="about-text-container">
         <p className="about-text-1">

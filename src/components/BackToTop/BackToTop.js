@@ -3,8 +3,10 @@ import './BackToTop.css'
 
 // HOOKS
 import { useEffect, useState } from 'react'
+import { useNav } from "../../hooks/useNav"
 
-const BackToTop = () => {
+const BackToTop = () => {  
+  const { setCurrentSection } = useNav()
   const [showButton, setShowButton] = useState(false)
 
   useEffect(() => {
@@ -18,10 +20,16 @@ const BackToTop = () => {
   }, [])
 
   const scrollToTop = () => {
+    setCurrentSection(0)
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     })
+  }
+
+  // SCROLL TO TOP OF PAGE ON REFRESH
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0)
   }
 
   return (

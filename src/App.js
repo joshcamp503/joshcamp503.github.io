@@ -10,21 +10,49 @@ import Contact from './components/Contact/Contact';
 import About from './components/About/About'
 
 // HOOKS
+import { useNav } from "./hooks/useNav"
 import { useMode } from "./hooks/useMode"
+import { scroller } from 'react-scroll';
 
 function App() {
   const { mode } = useMode()
+  const { currentSection, setCurrentSection } = useNav()
+  const sections = ['home', 'projects', 'about', 'resume', 'contact']
+
+  const handleScroll = (e) => {
+    e.stopPropagation()
+    let nextSection = null
+    if(e.deltaY > 0) {
+      nextSection = currentSection + 1
+    } else {
+      nextSection = currentSection - 1
+    }
+
+    const errConditions = (nextSection < 0) || (nextSection > (sections.length - 1))
+    if (errConditions) {
+      nextSection = currentSection
+      return
+    }
+    const scrollOptions = {
+      spy: true,
+      smooth: true,
+      duration: 500,
+      offset: -70
+    }
+    scroller.scrollTo(sections[nextSection], scrollOptions)
+    setCurrentSection(nextSection)
+  }
 
   return (
-    <div className={`App ${mode}`}>
+    <div className={`App ${mode}`} id="app" onWheel={handleScroll}>
       <IconContext.Provider value={{ size: "2rem" }}>
         <BackToTop />
         <Navbar />
-        <Home />
-        <Projects />
-        <About />
-        <Resume />
-        <Contact />
+        <Home name="home"/>
+        <Projects name="projects" />
+        <About name="about" />
+        <Resume name="resume" />
+        <Contact name="contact" />
       </IconContext.Provider>
     </div>
   );
