@@ -20,12 +20,13 @@
 }
 
 /* DEFAULT STYLES */
+
 .home {
   display: flex;
     align-items: center;
     justify-content: center;
   /* flex: 1; */
-  height: 650px;
+  height: 750px;
   overflow-x: hidden;
   position: relative;
 }
@@ -55,7 +56,7 @@
   color: #32E78D;
 }
 
-#title {
+h3 {
   color: #B0EC38;
 }
 
@@ -64,7 +65,15 @@
 }
 
 .home .content {
+  border-radius: 1rem;
+  filter: brightness(0.9);
   margin-top: 5rem;
+  padding: 150px 100px;
+  overflow: hidden;
+}
+
+.home .container p {
+  margin: 5px 0;
 }
 
 .button-box {
@@ -155,16 +164,26 @@
 }
 
 /* ANIMATIONS */
-
 .typed {
   overflow: hidden;
-  border-right: .15em solid orange;
   white-space: nowrap;
   width: 0;
   animation: 
-    blinkAnimation 1s steps(5, start) 3.5s infinite,
-    fadeIn 0.1s ease-in-out 2.5s both,
-    typing 1s steps(20, end) 2.5s forwards
+    /* blinkAnimation 1s steps(5, start) 3.5s infinite, */
+    nextLine 2s linear 3s,
+    fadeIn 0.1s ease-in-out 1s both,
+    typing 1s steps(20, end) 1s forwards
+}
+
+.typed-last {
+  border-right: .15em solid orange;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: 
+    blinkAnimation 1s steps(5, start) 3s infinite,
+    fadeIn 0.1s ease-in-out 3s both,
+    typing 1s steps(20, end) 3s forwards
 }
 
 .slide-over {
@@ -193,6 +212,11 @@
   to { width: 100% }
 }
 
+@keyframes nextLine {
+  from { border-right: .15em solid orange; }
+  to { border-right: none}
+}
+
 @keyframes slideOver {
   from { transform: translateX(-100%) }
   to { transform: translateX(0%) }
@@ -209,7 +233,7 @@
 }
 
 @keyframes blinkAnimation {
-  to { border: none }
+  to { border-right: none}
 }
 
 @keyframes creep {

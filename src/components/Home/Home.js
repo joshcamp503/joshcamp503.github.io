@@ -1,5 +1,6 @@
 // STYLES
 import './Home.css'
+import './crt.css'
 
 // ICONS
 import { FaReact } from 'react-icons/fa'
@@ -18,20 +19,40 @@ const Home = () => {
   const { mode } = useMode()
   const { setCurrentSection } = useNav()
 
+  const delay = (sec) => {
+    return {
+      animationDelay: `${sec}s`
+    }
+  }
+
+  const indent = (num) => {
+    return {
+      paddingLeft: `calc(2ch * ${num})`
+    }
+  } 
+
+  const twoStyles = (func1, arg1, func2, arg2) => {
+    const { paddingLeft } = func1(arg1)
+    const { animationDelay } = func2(arg2)
+    return {
+      paddingLeft,
+      animationDelay
+    }
+  }
+
   return (
     <div className={`home ${mode}`} >
       <div className="react-icon"><FaReact /></div>
       <div className="javascript-icon"><SiJavascript /></div>
       <div className="css-icon"><SiCss3 /></div> 
       <div className="html-icon"><FaHtml5 /></div> 
-      <div className="content">   
-        <h1>
-          <div className="container"><div id="first-name" className={`slide-over ${mode}`}>Josh </div></div>
-          <div className="container"><div id="last-name" className={`slide-down ${mode}`}>Campanella</div></div>
-        </h1>
+      <div className="content crt">
         <h3>
-          <div className="container"><div id="function" className={`fade-in ${mode}`}>function</div></div>
-          <div className="container"><div id="title" className={`typed ${mode}`}>WebDeveloper()</div></div>
+          <div className="container">
+            <p className="typed" style={delay(1)}>const joshCampanella = {"{"}</p>
+            <p className="typed" style={twoStyles(indent, 1, delay, 2)}>role: "web developer"</p>
+            <span className="typed-last" >{"}"}</span>
+          </div>
         </h3>
         <ul className="button-box" >
           <li><Link to="projects" onClick={() => setCurrentSection(1)} spy={true} smooth={true} duration={500} offset={-70}>SEE MY WORK</Link></li>

@@ -22,7 +22,7 @@ function App() {
   const handleScroll = (e) => {
     e.stopPropagation()
     // DON'T SCROLL TO NEXT SECTION IF MOUSE IS ON 'PROJECTS' SECTION
-    if (e.pageY > 650 && e.pageY < 1800 ) return false
+    if (e.pageY > 750 && e.pageY < 1900 ) return false
     let nextSection = null
     if (e.deltaY > 0) {
       nextSection = currentSection + 1
