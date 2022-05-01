@@ -50,8 +50,11 @@ const Home = () => {
         <h3>
           <div className="container">
             <p className="typed" style={delay(1)}>const joshCampanella = {"{"}</p>
-            <p className="typed" style={twoStyles(indent, 1, delay, 2)}>role: "web developer"</p>
-            <span className="typed-last" >{"}"}</span>
+            <p className="typed" style={twoStyles(indent, 1, delay, 2)}>role: "web developer",</p>
+            <p className="typed" style={twoStyles(indent, 1, delay, 3)}>languages: ["HTML", "CSS", "Javascript"],</p>
+            <p className="typed" style={twoStyles(indent, 1, delay, 4)}>frameworks: ["React", "Express"],</p>
+            <p className="typed" style={twoStyles(indent, 1, delay, 5)}>database: "MongoDB"</p>
+            <span className="typed-last" style={delay(6)} >{"}"}</span>
           </div>
         </h3>
         <ul className="button-box" >

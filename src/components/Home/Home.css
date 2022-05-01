@@ -29,6 +29,7 @@
   height: 750px;
   overflow-x: hidden;
   position: relative;
+    z-index: 0;
 }
 
 .home h1 {
@@ -56,6 +57,20 @@
   color: #32E78D;
 }
 
+.home .content {
+  border-radius: 1rem;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  filter: brightness(0.9);
+  height: 500px;
+  margin-top: 5rem;
+  overflow: hidden;
+  padding: 50px 100px;
+  position: relative;
+    z-index: 3;
+}
+
 h3 {
   color: #B0EC38;
 }
@@ -64,16 +79,9 @@ h3 {
   display: inline-block;
 }
 
-.home .content {
-  border-radius: 1rem;
-  filter: brightness(0.9);
-  margin-top: 5rem;
-  padding: 150px 100px;
-  overflow: hidden;
-}
-
 .home .container p {
   margin: 5px 0;
+  max-width: fit-content;
 }
 
 .button-box {
