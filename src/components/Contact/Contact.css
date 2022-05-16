@@ -102,10 +102,12 @@
 }
 
 .conf-modal h3 {
+  color: black;
   margin-bottom: 1rem;
 }
 
 .conf-modal p {
+  color: black;
   font-size: 14px;
   text-align: left;
   width: 100%;
