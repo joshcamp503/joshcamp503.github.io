@@ -25,7 +25,7 @@ const Contact = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("https://portfolio-server-api.herokuapp.com/contact", {
+    let response = await fetch("https://portfolio-email-server.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
