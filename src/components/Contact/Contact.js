@@ -39,7 +39,6 @@ const Contact = () => {
     } else {
       showError(true)
     }
-    console.log(formRef)
     formRef.current.reset()
   };
 
