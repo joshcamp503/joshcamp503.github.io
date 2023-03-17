@@ -10,7 +10,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const buffer = require("vinyl-buffer");
 
 const paths = {
-  pages: ["src/*.html", "src/styles/*.css"],
+  pages: ["src/*.html"],
 };
 
 const watchedBrowserify = watchify(
@@ -29,13 +29,13 @@ gulp.task("copy-html", function () {
 });
 
 gulp.task('sass', function() {
-  return gulp.src('src/index.scss')
+  return gulp.src('src/styles/index.scss')
     .pipe(sass())
     .pipe(gulp.dest('dist'))
 })
 
 gulp.task('watch', function() {
-  gulp.watch('src/index.scss', gulp.series('sass'))
+  gulp.watch('src/styles/index.scss', gulp.series('sass'))
   gulp.watch('src/index.html', gulp.series("copy-html"))
 })
 
