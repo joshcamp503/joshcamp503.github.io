@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-v2",
+  "version": "2.0.0",
+  "description": "A static developer portfolio for myself",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshcamp503/joshcamp503.github.io.git"
+  },
+  "keywords": [
+    "static",
+    "portfolio",
+    "v2"
+  ],
+  "author": "Josh Campanella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshcamp503/joshcamp503.github.io/issues"
+  },
+  "homepage": "https://github.com/joshcamp503/joshcamp503.github.io#readme",
+  "dependencies": {
+    "@picocss/pico": "^1.5.7"
+  }
+}
