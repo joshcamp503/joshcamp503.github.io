@@ -1,34 +1,63 @@
 @import 'reset.scss';
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=PT+Sans+Narrow:wght@400;700&display=swap');
 
 body {
-  background-color:cornsilk;
-  font-family: 'Lora';
-  nav.navbar {
-    display: flex;
-      gap: 1em;
-      justify-content: right;
-    padding: 1em;
-    a {
-      color: black;
-      text-decoration: none;
-    }
-  }
-  .content {
-    display: flex;
-      align-items: center;
-      justify-content: center;
+  background-color:rgba(0, 0, 0);
+  font-family: 'Oswald';
+  main {
     height: 100%;
-    .mainBanner {
-      margin-bottom: 30%;
-      header {
-        margin-bottom: 2em;
+    width: 100%;
+    .container {
+      background-image: url('../../dist/assets/hawaii.jpg');
+      background-position-y: center;
+      background-size: cover;;
+      height: 100%;
+      position: relative;
+      width: 100%;
+      nav.navbar {
         display: flex;
-          gap: .5em;
-        small {
-          padding-top: 10px;
+          flex-direction: column;
+        position: absolute;
+          top: 10%;
+          left: 5%;
+        a {
+          color: rgba(255, 255, 255, .6);
+          font-size: 3.5em;
+          font-weight: 700;
+          line-height: .9em;
+          text-decoration: none;
+          &:hover {
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+        #projects {
+          color: rgba(147, 233, 190, 0.6);
+          // color: rgba(225, 0, 15, 0.6);
+          &:hover {
+            color: rgba(147, 233, 190);
+            // color: rgba(225, 0, 15);
+          }
         }
       }
     }
   }
+  
+  
+  // .content {
+  //   display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //   height: 100%;
+  //   .mainBanner {
+  //     margin-bottom: 30%;
+  //     header {
+  //       margin-bottom: 2em;
+  //       display: flex;
+  //         gap: .5em;
+  //       small {
+  //         padding-top: 10px;
+  //       }
+  //     }
+  //   }
+  // }
 }

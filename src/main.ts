@@ -7,4 +7,4 @@ function showHello(divName: string, name: string) {
   elt.innerText = sayHello(name);
 }
 
-showHello("greeting", "world!");
+// showHello("greeting", "Josh!");
