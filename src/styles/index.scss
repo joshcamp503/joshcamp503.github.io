@@ -4,60 +4,57 @@
 body {
   background-color:rgba(0, 0, 0);
   font-family: 'Oswald';
+  position: relative;
+  header {
+    color: white;
+    font-size: 4em;
+    padding: 0 1em;
+    position: absolute;
+    span {
+      color: rgba(225, 0, 15, 0.9);
+    }
+  }
   main {
+    display: flex;
+      align-items: center;
+      justify-content: center;
     height: 100%;
-    width: 100%;
-    .container {
-      background-image: url('../../dist/assets/hawaii.jpg');
-      background-position-y: center;
-      background-size: cover;;
-      height: 100%;
+    .hero {
       position: relative;
-      width: 100%;
+      .imgContainer {
+        opacity: 0.5;
+        width: 600px;
+      }
       nav.navbar {
         display: flex;
+        align-items: left;
+        justify-content: center;
           flex-direction: column;
+        height: 255px;
         position: absolute;
-          top: 10%;
-          left: 5%;
+          bottom: 0;
+          right: -25%;
+        width: 255px;
         a {
           color: rgba(255, 255, 255, .6);
           font-size: 3.5em;
           font-weight: 700;
+          // letter-spacing: 2px;
           line-height: .9em;
           text-decoration: none;
           &:hover {
             color: rgba(255, 255, 255, 1);
+            font-size: 4em;
           }
         }
         #projects {
-          color: rgba(147, 233, 190, 0.6);
-          // color: rgba(225, 0, 15, 0.6);
+          color: rgba(225, 0, 15, 0.6);
           &:hover {
-            color: rgba(147, 233, 190);
-            // color: rgba(225, 0, 15);
+            // color: #e1000f;
+            color: rgba(225, 0, 15);
           }
         }
       }
     }
   }
-  
-  
-  // .content {
-  //   display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //   height: 100%;
-  //   .mainBanner {
-  //     margin-bottom: 30%;
-  //     header {
-  //       margin-bottom: 2em;
-  //       display: flex;
-  //         gap: .5em;
-  //       small {
-  //         padding-top: 10px;
-  //       }
-  //     }
-  //   }
-  // }
 }

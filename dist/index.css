@@ -39,39 +39,55 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
   background-color: rgb(0, 0, 0);
   font-family: "Oswald";
+  position: relative;
+}
+body header {
+  color: white;
+  font-size: 4em;
+  padding: 0 1em;
+  position: absolute;
+}
+body header span {
+  color: rgba(225, 0, 15, 0.9);
 }
 body main {
-  height: 100%;
-  width: 100%;
-}
-body main .container {
-  background-image: url("../../dist/assets/hawaii.jpg");
-  background-position-y: center;
-  background-size: cover;
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-body main .container nav.navbar {
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 10%;
-  left: 5%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
-body main .container nav.navbar a {
+body main .hero {
+  position: relative;
+}
+body main .hero .imgContainer {
+  opacity: 0.5;
+  width: 600px;
+}
+body main .hero nav.navbar {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  height: 255px;
+  position: absolute;
+  bottom: 0;
+  right: -25%;
+  width: 255px;
+}
+body main .hero nav.navbar a {
   color: rgba(255, 255, 255, 0.6);
   font-size: 3.5em;
   font-weight: 700;
   line-height: 0.9em;
   text-decoration: none;
 }
-body main .container nav.navbar a:hover {
+body main .hero nav.navbar a:hover {
   color: rgb(255, 255, 255);
+  font-size: 4em;
 }
-body main .container nav.navbar #projects {
-  color: rgba(147, 233, 190, 0.6);
+body main .hero nav.navbar #projects {
+  color: rgba(225, 0, 15, 0.6);
 }
-body main .container nav.navbar #projects:hover {
-  color: rgb(147, 233, 190);
+body main .hero nav.navbar #projects:hover {
+  color: rgb(225, 0, 15);
 }
