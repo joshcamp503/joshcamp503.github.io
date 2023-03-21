@@ -39,16 +39,6 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
   background-color: rgb(0, 0, 0);
   font-family: "Oswald";
-  position: relative;
-}
-body header {
-  color: white;
-  font-size: 4em;
-  padding: 0 1em;
-  position: absolute;
-}
-body header span {
-  color: rgba(225, 0, 15, 0.9);
 }
 body main {
   display: flex;
@@ -59,9 +49,20 @@ body main {
 body main .hero {
   position: relative;
 }
+body main .hero header {
+  color: white;
+  font-size: 4em;
+  padding: 0 1em;
+  position: absolute;
+  top: -5%;
+  left: -40%;
+}
+body main .hero header span {
+  color: rgba(225, 0, 15, 0.9);
+}
 body main .hero .imgContainer {
   opacity: 0.5;
-  width: 600px;
+  width: 700px;
 }
 body main .hero nav.navbar {
   display: flex;

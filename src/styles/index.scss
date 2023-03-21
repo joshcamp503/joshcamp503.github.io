@@ -4,16 +4,6 @@
 body {
   background-color:rgba(0, 0, 0);
   font-family: 'Oswald';
-  position: relative;
-  header {
-    color: white;
-    font-size: 4em;
-    padding: 0 1em;
-    position: absolute;
-    span {
-      color: rgba(225, 0, 15, 0.9);
-    }
-  }
   main {
     display: flex;
       align-items: center;
@@ -21,9 +11,20 @@ body {
     height: 100%;
     .hero {
       position: relative;
+      header {
+        color: white;
+        font-size: 4em;
+        padding: 0 1em;
+        position: absolute;
+          top: -5%;
+          left: -40%;
+        span {
+          color: rgba(225, 0, 15, 0.9);
+        }
+      }
       .imgContainer {
         opacity: 0.5;
-        width: 600px;
+        width: 700px;
       }
       nav.navbar {
         display: flex;
