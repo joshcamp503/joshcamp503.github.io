@@ -33,7 +33,7 @@
 .about p {
   font-weight: 900;
   text-align: left;
-  text-indent: 2rem;
+  /* text-indent: 2rem; */
   width: 100%;
 }
 
