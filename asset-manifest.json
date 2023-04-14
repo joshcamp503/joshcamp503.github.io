@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a5d0780c.css",
-    "main.js": "/static/js/main.d2e6fd19.js",
-    "static/media/josh-campanella-resume-2022.pdf": "/static/media/josh-campanella-resume-2022.187a93b1cc644c99af1f.pdf",
+    "main.js": "/static/js/main.cec2d0e7.js",
+    "static/media/josh-campanella-resume-2023.pdf": "/static/media/josh-campanella-resume-2023.33c1fa7029f8c7a5eddd.pdf",
     "static/media/ip-locator-preview.png": "/static/media/ip-locator-preview.7fdd56746efe3dac8079.png",
     "static/media/audiophile-preview.png": "/static/media/audiophile-preview.40a56342eb3fce1a4565.png",
     "static/media/where-in-the-world-preview.png": "/static/media/where-in-the-world-preview.a0dcb3dff6cef8b5fba6.png",
@@ -10,10 +10,10 @@
     "index.html": "/index.html",
     "static/media/icon-hamburger.svg": "/static/media/icon-hamburger.f8a9f0cf12d419a7d18556f98d81a47e.svg",
     "main.a5d0780c.css.map": "/static/css/main.a5d0780c.css.map",
-    "main.d2e6fd19.js.map": "/static/js/main.d2e6fd19.js.map"
+    "main.cec2d0e7.js.map": "/static/js/main.cec2d0e7.js.map"
   },
   "entrypoints": [
     "static/css/main.a5d0780c.css",
-    "static/js/main.d2e6fd19.js"
+    "static/js/main.cec2d0e7.js"
   ]
 }
