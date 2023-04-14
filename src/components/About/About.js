@@ -8,23 +8,19 @@ const About = () => {
       <h1 className="about-header">ABOUT ME</h1>
       <div className="about-text-container">
         <p className="about-text-1">
-          I’m Josh Campanella and I make web applications in Portland, OR. I work with the React.js framework and I’m a JavaScript maven.
+          I’m Josh Campanella and I make web applications. 
         </p>
 
         <p className="about-text-2">
-          Bringing people’s ideas to life is my strength. My skills are particularly tailored to the building process – pixel-perfect development, implementing complex functionality, and providing a seamless user experience.
+          Front-end, back-end, full-stack.
         </p>
 
         <p className="about-text-3">
-          I pride myself on my attention to detail, my aptitude for figuring things out, and my reliable sense of accountability… and my CSS skills.
+          I specialize in developing in React with HTML & JSX, CSS, and Javascript, as well as building and consuming RESTful APIs and integrating 3rd-party libraries & frameworks like Bootstrap and Material UI.
         </p>
 
         <p className="about-text-4">
-          An unquenchable thirst for knowledge drives me, and I have an insatiable appetite for trying new things. In my free time I particularly enjoy gaming, motorcycles, fishing, and learning about web technologies and programming languages.
-        </p>
-
-        <p className="about-text-5">
-          I did construction for 5 years as an independent contractor and learned first-hand the challenges that business owners face. That experience collaborating with customers and other business owners was invaluable in shaping me into the professional I am today.
+          Some of the libraries and other technologies I have worked with include: Typescript, Node.js, Nodemailer, Gulp, Express.js, MongoDB, Firebase Firestore and Functions, Wordpress, Sass, and Python.
         </p>
 
         <p className="about-text-6">
